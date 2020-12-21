@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0690d2c7-f896-4cae-8ab9-ea85fe2168da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,11 +136,15 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1lykDunN4yJ5MEsOEBfQiysr0AW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -149,7 +153,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunAnythingCache">
@@ -158,13 +162,13 @@
       <command value="c require sonata-project/admin-bundle" />
       <command value="c recipes " />
       <command value="c recipes sonata-project/admin-bundle " />
-      <command value="symfony doctrine:migrations:diff" />
-      <command value="symfony doctrine:migrations:migrate" />
       <command value="c install" />
       <command value="c require" />
       <command value="c require sonata-project/doctrine-orm-admin-bundle" />
       <command value="symfony doctrine:migrations:migrate 20201220175949" />
       <command value="symfony doctrine:migrations:migrate DoctrineMigrations\Version20201220175949" />
+      <command value="symfony doctrine:migrations:diff" />
+      <command value="symfony doctrine:migrations:migrate" />
     </option>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -175,7 +179,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608576602194</updated>
-      <workItem from="1608576603364" duration="7323000" />
+      <workItem from="1608576603364" duration="7658000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1608583342291</created>
@@ -184,13 +188,28 @@
       <option name="project" value="LOCAL" />
       <updated>1608583342291</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First commit">
+      <created>1608584929587</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608584929587</updated>
+    </task>
+    <task id="LOCAL-00003" summary="First commit">
+      <created>1608585059620</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608585059620</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First commit" />
     <option name="LAST_COMMIT_MESSAGE" value="First commit" />
   </component>
