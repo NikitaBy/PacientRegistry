@@ -2,8 +2,8 @@ services:
     _defaults:
         autowire: true
 
-    admin.user:
-        class: App\Admin\UserAdmin
-        arguments: [ ~, App\Entity\User, ~ ]
-        tags:
-            - { name: sonata.admin, manager_type: orm, label: User }
+#    admin.user:
+#        class: App\Admin\UserAdmin
+#        arguments: [ ~, App\Entity\User, ~ ]
+#        tags:
+#            - { name: sonata.admin, manager_type: orm, label: User }
