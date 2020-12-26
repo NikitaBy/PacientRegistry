@@ -1,22 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0690d2c7-f896-4cae-8ab9-ea85fe2168da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="0690d2c7-f896-4cae-8ab9-ea85fe2168da" name="Default Changelist" comment="Auth without FOS">
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201224161336.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command/CreateAdminCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/FieldsTrait/DescriptionTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Enum/RoleEnum.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Factory/UserFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/LoginForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/config/security.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Saver/UserSaver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Security/LoginAuthenticator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Security/PasswordUpdater.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Security/UserProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/standard_layout.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_12_21_20__9_50_PM.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_12_21_20__9_50_PM.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TWIG" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.0">
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="PhpServers">
+    <servers>
+      <server host="registry.lh" id="e71317ba-bb82-4f40-8bf9-f1b50fe75250" name="registry.lh" />
+      <server host="dm.lh" id="d6b56179-16ad-406d-85eb-a47f336c8b42" name="dm.lh" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/vendor/twig/extra-bundle" />
@@ -149,12 +187,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="/etc/php/7.0/cli/php.ini" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -162,13 +206,16 @@
       <command value="c require sonata-project/admin-bundle" />
       <command value="c recipes " />
       <command value="c recipes sonata-project/admin-bundle " />
-      <command value="c install" />
       <command value="c require" />
       <command value="c require sonata-project/doctrine-orm-admin-bundle" />
       <command value="symfony doctrine:migrations:migrate 20201220175949" />
       <command value="symfony doctrine:migrations:migrate DoctrineMigrations\Version20201220175949" />
       <command value="symfony doctrine:migrations:diff" />
       <command value="symfony doctrine:migrations:migrate" />
+      <command value="symfony cache:clear" />
+      <command value="s administration:create-admin" />
+      <command value="c install" />
+      <command value="s debug:container" />
     </option>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -179,7 +226,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608576602194</updated>
-      <workItem from="1608576603364" duration="7658000" />
+      <workItem from="1608576603364" duration="7797000" />
+      <workItem from="1608734548876" duration="9300000" />
+      <workItem from="1608747898075" duration="7228000" />
+      <workItem from="1608756267992" duration="570000" />
+      <workItem from="1608822742754" duration="2031000" />
+      <workItem from="1608829219236" duration="1892000" />
+      <workItem from="1608832048696" duration="766000" />
+      <workItem from="1608832825453" duration="6278000" />
+      <workItem from="1608839484882" duration="666000" />
+      <workItem from="1608840162527" duration="3906000" />
+      <workItem from="1608972307295" duration="5714000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1608583342291</created>
@@ -202,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608585059620</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="First commit">
+      <created>1608585144987</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608585144987</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +275,48 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Fix migration" />
+    <MESSAGE value="Auth without FOS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Auth without FOS" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Command/CreateAdminCommand.php</url>
+          <line>92</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Security/UserProvider.php</url>
+          <line>40</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/vendor/symfony/security-guard/GuardAuthenticatorHandler.php</url>
+          <line>77</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Security/LoginAuthenticator.php</url>
+          <line>66</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Security/LoginAuthenticator.php</url>
+          <line>54</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Security/LoginAuthenticator.php</url>
+          <line>61</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

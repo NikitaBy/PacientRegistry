@@ -1,0 +1,7 @@
+services:
+    _defautls:
+        autowire: true
+
+    App\Securiry\PasswordUpdated:
+        arguments:
+
