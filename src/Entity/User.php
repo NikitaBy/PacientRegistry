@@ -44,9 +44,9 @@ class User implements UserInterface
     private $username;
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getPlainPassword(): string
+    public function getPlainPassword(): ?string
     {
         return $this->plainPassword;
     }
@@ -63,17 +63,18 @@ class User implements UserInterface
         return $this;
     }
 
+    /**
+     * @return int|null
+     */
     public function getId(): ?int
     {
         return $this->id;
     }
 
     /**
-     * A visual identifier that represents this user.
-     *
-     * @see UserInterface
+     * @return string|null
      */
-    public function getUsername(): string
+    public function getUsername(): ?string
     {
         return (string) $this->username;
     }
@@ -106,7 +107,7 @@ class User implements UserInterface
     {
         $roles = $this->roles;
 
-        // guarantee every user at least has ROLE_USER
+        //        $roles[] = RoleEnum::ROLE_USER;
 
         return array_unique($roles);
     }
@@ -129,9 +130,9 @@ class User implements UserInterface
     }
 
     /**
-     * @see UserInterface
+     * @return string|null
      */
-    public function getPassword(): string
+    public function getPassword(): ?string
     {
         return (string) $this->password;
     }
@@ -144,18 +145,18 @@ class User implements UserInterface
     }
 
     /**
-     * @see UserInterface
+     * @return string|null
      */
-    public function getSalt()
+    public function getSalt(): ?string
     {
-        // not needed when using the "bcrypt" algorithm in security.yaml
+        return null;
     }
 
     /**
-     * @see UserInterface
+     * @return void
      */
-    public function eraseCredentials()
+    public function eraseCredentials(): void
     {
-         $this->plainPassword = null;
+        $this->plainPassword = null;
     }
 }

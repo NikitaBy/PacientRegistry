@@ -23,12 +23,23 @@ class RoleEnum
     /**
      * @return string[]
      */
-    public function list(): array
+    public static function list(): array
     {
         return [
             self::ROLE_ADMIN,
             self::ROLE_DOCTOR,
             self::ROLE_USER,
+        ];
+    }
+
+    /**
+     * @return string[]
+     */
+    public static function listForChoice(): array
+    {
+        return [
+            self::ROLE_ADMIN,
+            self::ROLE_DOCTOR,
         ];
     }
 }
