@@ -1,22 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0690d2c7-f896-4cae-8ab9-ea85fe2168da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="0690d2c7-f896-4cae-8ab9-ea85fe2168da" name="Default Changelist" comment="Auth by symfony guide">
+      <change afterPath="$PROJECT_DIR$/src/Admin/UserAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Security/UserPasswordUpdater.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/ChoiceMapper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/sonata_admin.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/sonata_admin.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Enum/RoleEnum.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enum/RoleEnum.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Resources/config/admin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/config/admin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.0">
+  <component name="PhpServers">
+    <servers>
+      <server host="registry.lh" id="fc441e8c-81e1-4814-bbe8-11801930f0c4" name="registry.lh" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.*">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/vendor/twig/extra-bundle" />
@@ -133,7 +154,12 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-acl" />
       <path value="$PROJECT_DIR$/vendor/sonata-project/doctrine-orm-admin-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
     </include_path>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1lykDunN4yJ5MEsOEBfQiysr0AW" />
   <component name="ProjectLevelVcsManager">
@@ -153,7 +179,8 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunAnythingCache">
@@ -162,13 +189,25 @@
       <command value="c require sonata-project/admin-bundle" />
       <command value="c recipes " />
       <command value="c recipes sonata-project/admin-bundle " />
-      <command value="c install" />
       <command value="c require" />
       <command value="c require sonata-project/doctrine-orm-admin-bundle" />
       <command value="symfony doctrine:migrations:migrate 20201220175949" />
       <command value="symfony doctrine:migrations:migrate DoctrineMigrations\Version20201220175949" />
       <command value="symfony doctrine:migrations:diff" />
+      <command value="c install symfony/security-bundle" />
+      <command value="c require symfony/security-bundle" />
+      <command value="c require symfony/maker-bundle --dev" />
+      <command value="symfony make:user" />
+      <command value="s make:migration" />
       <command value="symfony doctrine:migrations:migrate" />
+      <command value="s doctrine:migrations:migrate" />
+      <command value="s make:auth" />
+      <command value="c require orm-fixtures --dev" />
+      <command value="s make:fixtures" />
+      <command value="s maintenance:create-default-admin" />
+      <command value="s debug:router" />
+      <command value="s cache:clear" />
+      <command value="c install" />
     </option>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -180,6 +219,9 @@
       <option name="presentableId" value="Default" />
       <updated>1608576602194</updated>
       <workItem from="1608576603364" duration="7658000" />
+      <workItem from="1609587719061" duration="7387000" />
+      <workItem from="1609682987459" duration="8114000" />
+      <workItem from="1609692045352" duration="2324000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1608583342291</created>
@@ -208,9 +250,43 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Auth by symfony guide" />
+    <option name="LAST_COMMIT_MESSAGE" value="Auth by symfony guide" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Admin/UserAdmin.php</url>
+          <line>95</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="index.php">
+        <watch expression="\App\Enum\RoleEnum::list()" language="PHP" />
+        <watch expression="$this-&gt;choiceMapper-&gt;map('choices.roles.', RoleEnum::list())" language="PHP" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

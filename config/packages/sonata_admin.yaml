@@ -3,9 +3,10 @@ sonata_admin:
     dashboard:
         groups:
             administration:
-                label: ADministration
+                label: Administration
                 items:
                     - admin.user
+                roles: ['ROLE_ADMIN']
         blocks:
             - { type: sonata.admin.block.admin_list, position: left }
     options:
