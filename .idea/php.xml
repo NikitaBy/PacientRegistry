@@ -132,7 +132,7 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
     </include_path>
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
   <component name="PhpRuntimeConfiguration">
     <extensions>
       <extension name="FFI" enabled="true" />

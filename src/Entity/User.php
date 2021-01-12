@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use App\Entity\FieldsTrait\IdTrait;
 use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -14,12 +15,13 @@ use function in_array;
  */
 class User implements UserInterface
 {
+    use IdTrait;
+
     /**
-     * @ORM\Id
-     * @ORM\GeneratedValue
-     * @ORM\Column(type="integer")
+     * @var DoctorProfile
+     * @ORM\OneToOne(targetEntity=DoctorProfile::class, mappedBy="user", cascade={"persist", "remove"})
      */
-    private $id;
+    private $doctorProfile;
 
     /**
      * @var string The hashed password
@@ -44,6 +46,34 @@ class User implements UserInterface
     private $username;
 
     /**
+     * @return DoctorProfile|null
+     */
+    public function getDoctorProfile(): ?DoctorProfile
+    {
+        return $this->doctorProfile;
+    }
+
+    /**
+     * @param DoctorProfile $doctorProfile
+     *
+     * @return $this
+     */
+    public function setDoctorProfile(DoctorProfile $doctorProfile): self
+    {
+        $this->doctorProfile = $doctorProfile;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString(): string
+    {
+        return $this->getUsername() ?: '';
+    }
+
+    /**
      * @return string|null
      */
     public function getPlainPassword(): ?string
@@ -61,14 +91,6 @@ class User implements UserInterface
         $this->plainPassword = $plainPassword;
 
         return $this;
-    }
-
-    /**
-     * @return int|null
-     */
-    public function getId(): ?int
-    {
-        return $this->id;
     }
 
     /**

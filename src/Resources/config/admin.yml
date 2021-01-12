@@ -3,7 +3,22 @@ services:
         autowire: true
 
     admin.user:
-        class: App\Admin\UserAdmin
-        arguments: [ ~, App\Entity\User, ~ ]
+        class: 'App\Admin\UserAdmin'
+        arguments: [ ~, 'App\Entity\User', ~ ]
         tags:
             - { name: sonata.admin, manager_type: orm, label: User }
+        calls:
+            - [addChild, ['@admin.doctor_profile']]
+
+    admin.organization:
+        class: 'App\Admin\OrganizationAdmin'
+        arguments: [ ~, 'App\Entity\Organization', ~ ]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Organization }
+
+    admin.doctor_profile:
+        class: 'App\Admin\DoctorProfileAdmin'
+        arguments: [ ~, 'App\Entity\DoctorProfile', ~ ]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: DocP }
+
