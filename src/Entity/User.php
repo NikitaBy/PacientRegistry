@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Entity\FieldsTrait\IdTrait;
 use App\Repository\UserRepository;
+use App\Validator\User\Doctor\DoctorRole;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -12,6 +13,8 @@ use function in_array;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
+ *
+ * @DoctorRole()
  */
 class User implements UserInterface
 {

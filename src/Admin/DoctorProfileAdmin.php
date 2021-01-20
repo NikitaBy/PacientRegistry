@@ -10,6 +10,7 @@ use App\Factory\DoctorProfileFactory;
 use App\Security\UserPasswordUpdater;
 use DateTime;
 use Sonata\AdminBundle\Admin\AbstractAdmin;
+use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Security\Core\Security;
@@ -100,5 +101,18 @@ class DoctorProfileAdmin extends AbstractAdmin
             ->add('patronymic')
             ->add('lastName')
             ->add('organization');
+    }
+
+    protected function configureListFields(ListMapper $list)
+    {
+        $list
+            ->add('id')
+            ->add('lastName')
+            ->add('firstName')
+            ->add(
+                '_action',
+                null,
+                ['actions' => ['edit' => [], 'delete' => []]]
+            );
     }
 }

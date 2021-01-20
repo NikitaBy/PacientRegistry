@@ -2,25 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0690d2c7-f896-4cae-8ab9-ea85fe2168da" name="Default Changelist" comment="Auth by symfony guide">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20210112172955.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin/DoctorProfileAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin/OrganizationAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/DoctorProfile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/FieldsTrait/CreatedTrait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/FieldsTrait/DescriptionTrait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/FieldsTrait/NameTrait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/FieldsTrait/PersonNameTrait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/FieldsTrait/UpdatedTrait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Organization.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Factory/DoctorProfileFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Validator/User/Doctor/DoctorRole.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Validator/User/Doctor/DoctorRoleValidator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/sonata_admin.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/sonata_admin.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Admin/UserAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin/UserAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/CreateDefaultAdminCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/CreateDefaultAdminCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Admin/DoctorProfileAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin/DoctorProfileAdmin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resources/config/admin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/config/admin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +206,6 @@
       <command value="s make:fixtures" />
       <command value="s debug:router" />
       <command value="c install" />
-      <command value="s cache:clear" />
       <command value="symfony doctrine:migrations:diff" />
       <command value="s doctrine:migrations:migrate Version20201226113831" />
       <command value="s doctrine:migrations:migrate 20201226113831" />
@@ -230,6 +215,7 @@
       <command value="s doctrine:migrations:migrate DoctrineMigrations\Version20201226113831" />
       <command value="s doctrine:migrations:diff" />
       <command value="s doctrine:migrations:migrate -vv" />
+      <command value="s cache:clear" />
     </option>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -250,6 +236,7 @@
       <workItem from="1610138078401" duration="5520000" />
       <workItem from="1610375837127" duration="2353000" />
       <workItem from="1610462356644" duration="11886000" />
+      <workItem from="1611158682176" duration="4045000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1608583342291</created>
@@ -306,7 +293,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Admin/DoctorProfileAdmin.php</url>
-          <line>95</line>
+          <line>96</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
